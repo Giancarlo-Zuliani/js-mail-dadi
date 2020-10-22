@@ -2,10 +2,7 @@
 // array full of accepted mails
 var mailList = ["ciao@gmail.com" , "ciao@libero.it" , "ciao@hotmail.com" , "pippo@gmail.com" , "helloworld@gmail.com" , "pippo@hotmail.com" , "helloworld@hotmail.com" , "boolean@gmail.com" , "boolean@libero.it" , "boolean@hotmail.com" , "booleancareers@gmail.com" , "booleancareers@hotmail.com" , "1234@gmail.com" ];
 
-//switch variable
-
-
-
+// check password 
 
 function check(){
   document.getElementById('result').innerHTML = "";

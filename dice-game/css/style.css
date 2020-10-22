@@ -7,8 +7,10 @@
 
 body{
   background-image: url('../img/bg.jpg');
-  background-position:top center;
+  background-position:center;
   background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
 }
 
 section{

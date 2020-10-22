@@ -1,6 +1,7 @@
 //Genero due numeri causuali da 1 a 6 e li confronto;
 
 
+var gifs = document.getElementsByClassName('gif');
 
 
 
@@ -17,6 +18,20 @@ function diceGame(){
   else{
     console.log('hai perso')
   }
+  var v = Math.floor(Math.random() * gifs.length - 1);
+  console.log(v);
+  for(i=0; i < gifs.length;i++){
+    gifs[i].style.display="none";
+  }
+
+  gifs[v].style.display = "block"
 };
 
 diceGame();
+
+
+
+console.log(gifs);
+
+
+//random number for gift

@@ -59,6 +59,7 @@ section{
 
 button{
   padding:25px;
+  margin-bottom: 20px;
 }
 
 #cpuNum , #userNum{

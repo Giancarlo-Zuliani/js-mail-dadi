@@ -2,7 +2,7 @@
 // array full of accepted mails
 var mailList = ["ciao@gmail.com" , "ciao@libero.it" , "ciao@hotmail.com" , "pippo@gmail.com" , "helloworld@gmail.com" , "pippo@hotmail.com" , "helloworld@hotmail.com" , "boolean@gmail.com" , "boolean@libero.it" , "boolean@hotmail.com" , "booleancareers@gmail.com" , "booleancareers@hotmail.com" , "1234@gmail.com" ];
 
-// check password 
+// check password
 
 function check(){
   document.getElementById('result').innerHTML = "";
@@ -13,6 +13,7 @@ function check(){
 
     if(userMail === mailList[i]){
        x = true;
+     }
     }
 
     if(x){
@@ -20,5 +21,4 @@ function check(){
       }else {
       document.getElementById('result').innerHTML = "Invalid password";
     }
-  }
 }

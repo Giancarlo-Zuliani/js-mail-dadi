@@ -8,8 +8,12 @@ var point = {
   cpu : 0
 }
 
+var audio = new Audio('sound/sound.mp3')
 
 function diceGame(){
+
+  audio.play();
+
   //generate 2 random number
   let cpuPick = Math.floor(Math.random() * 6 ) + 1 ;
   let userPick = Math.floor(Math.random() * 6 ) + 1 ;

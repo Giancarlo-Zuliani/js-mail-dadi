@@ -1,37 +1,44 @@
-//Genero due numeri causuali da 1 a 6 e li confronto;
 
-
+//gifs array
 var gifs = document.getElementsByClassName('gif');
 
+//points
+var point = {
+  user : 0 ,
+  cpu : 0
+}
 
 
 function diceGame(){
+  //generate 2 random number
   let cpuPick = Math.floor(Math.random() * 6 ) + 1 ;
   let userPick = Math.floor(Math.random() * 6 ) + 1 ;
-  console.log(cpuPick);
-  console.log(userPick);
+  document.getElementById('userNum').innerHTML = userPick;
+  document.getElementById('cpuNum').innerHTML = cpuPick;
+  let result = document.getElementById('result');
+  //check who win
   if(cpuPick === userPick){
-    console.log('pareggio')
+    result.innerHTML="Draw!"
   }else if (cpuPick < userPick){
-    console.log('hai vinto')
+    result.innerHTML = "You Win!"
+    ++point.user;
   }
   else{
-    console.log('hai perso')
-  }
-  var v = Math.floor(Math.random() * gifs.length - 1);
-  console.log(v);
+    result.innerHTML="You Lose!";
+    ++point.cpu;
+  };
+
+  document.getElementById('userscore').innerHTML = point.user;
+  document.getElementById('cpuscore').innerHTML = point.cpu;
+
+  //random gif
+
+  var v = Math.floor(Math.random() * gifs.length);
+
   for(i=0; i < gifs.length;i++){
     gifs[i].style.display="none";
   }
 
   gifs[v].style.display = "block"
+
 };
-
-diceGame();
-
-
-
-console.log(gifs);
-
-
-//random number for gift

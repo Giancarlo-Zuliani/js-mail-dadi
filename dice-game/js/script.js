@@ -1,6 +1,9 @@
 //Genero due numeri causuali da 1 a 6 e li confronto;
 
 
+
+
+
 function diceGame(){
   let cpuPick = Math.floor(Math.random() * 6 ) + 1 ;
   let userPick = Math.floor(Math.random() * 6 ) + 1 ;
@@ -15,6 +18,5 @@ function diceGame(){
     console.log('hai perso')
   }
 };
-
 
 diceGame();

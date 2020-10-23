@@ -16,9 +16,6 @@ function check(){
      }
     }
 
-    if(x){
-      document.getElementById('result').innerHTML = "Password accepted";
-      }else {
-      document.getElementById('result').innerHTML = "Invalid password";
-    }
+
+    x ? document.getElementById('result').innerHTML = "Password accepted" : document.getElementById('result').innerHTML = "Invalid password"
 }

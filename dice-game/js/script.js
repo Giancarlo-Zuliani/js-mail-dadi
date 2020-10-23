@@ -37,7 +37,7 @@ function diceGame(){
 
   //random gif
 
-  var v = Math.floor(Math.random() * gifs.length);
+  var v = Math.floor(Math.random() * gifs.length) - 1;
 
   for(i=0; i < gifs.length;i++){
     gifs[i].style.display="none";

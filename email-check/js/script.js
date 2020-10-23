@@ -17,5 +17,5 @@ function check(){
     }
 
 
-    x ? document.getElementById('result').innerHTML = "Password accepted" : document.getElementById('result').innerHTML = "Invalid password"
+    x ? document.getElementById('result').innerHTML = "Password accepted" : document.getElementById('result').innerHTML = "Invalid password";
 }
